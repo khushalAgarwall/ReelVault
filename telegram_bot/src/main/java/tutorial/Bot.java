@@ -26,7 +26,7 @@ public class Bot extends TelegramLongPollingBot {
 
     @Override
     public String getBotToken() {
-        return "7789555374:AAGRkNhmfvQCEQz1564idZhuJzmbwgU8l0o";
+        return "insert your token";
     }
 
     @Override
@@ -59,7 +59,7 @@ public class Bot extends TelegramLongPollingBot {
         }
     }
 
-    public void sendText(long who, String what) { 
+    public void sendText(long who, String what) {
         SendMessage sm = SendMessage.builder()
                 .chatId(String.valueOf(who))
                 .text(what).build();
